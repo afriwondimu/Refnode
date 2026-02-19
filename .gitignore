@@ -1,0 +1,58 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Database
+*.db
+*.sqlite3
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Alembic
+alembic/versions/*.py
+!alembic/versions/__init__.py
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Uploads
+uploads/
+media/
