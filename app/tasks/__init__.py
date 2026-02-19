@@ -1,0 +1,1 @@
+from app.tasks.referral_tasks import celery_app

@@ -39,3 +39,16 @@ cd refnode
 ```bash
 pip install -r requirements.txt
 ```
+3. Migrate:
+```bash
+alembic revision --autogenerate -m "Initial migration"
+alembic upgrade head
+```
+4. Run
+```bash
+uvicorn app.main:app --reload
+```
+5. Test by swagger
+```bash
+http://localhost:8000/docs#/
+```
