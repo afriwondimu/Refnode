@@ -11,14 +11,13 @@ invitation and referral system built with FastAPI, featuring unique referral cod
 - **Viral Features** - Track viral coefficient and referral metrics
 - **Scalable Architecture** - Built with async FastAPI and PostgreSQL
 
-## Tech Stack
+## The Tech Stack I Use
 
 - **Framework**: FastAPI
 - **Database**: PostgreSQL with SQLAlchemy ORM
 - **Migration**: Alembic
 - **Task Queue**: Celery with Redis
 - **Authentication**: JWT tokens
-- **Testing**: Pytest with async support
 
 ## Quick Start
 
@@ -52,4 +51,8 @@ uvicorn app.main:app --reload
 5. Test by swagger
 ```bash
 http://localhost:8000/docs#/
+```
+--- or simply you can use make commands: 
+```bash
+make help
 ```
