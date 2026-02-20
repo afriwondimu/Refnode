@@ -56,3 +56,7 @@ http://localhost:8000/docs#/
 ```bash
 make help
 ```
+--- You can test by swagger at 
+```bash
+http://localhost:8000/docs
+```
