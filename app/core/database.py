@@ -4,6 +4,10 @@ from sqlalchemy.orm import sessionmaker, Session
 from app.core.config import settings
 import contextlib
 from typing import Generator
+import logging
+
+
+logging.getLogger('sqlalchemy.engine').setLevel(logging.WARNING)
 
 Base = declarative_base()
 
@@ -12,7 +16,7 @@ engine = create_engine(
     pool_pre_ping=True,
     pool_size=20,
     max_overflow=40,
-    echo=settings.ENVIRONMENT == "development",
+    echo=False,  
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

@@ -43,6 +43,6 @@ class ReferralStats(BaseModel):
     total_reward_points: int
     viral_coefficient: float
 
-# Add this missing class
+
 class UseReferralRequest(BaseModel):
     referral_code: str

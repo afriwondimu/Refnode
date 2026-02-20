@@ -46,6 +46,7 @@ alembic upgrade head
 ```
 4. Run
 ```bash
+source venv/bin/activate
 uvicorn app.main:app --reload
 ```
 5. Test by swagger
